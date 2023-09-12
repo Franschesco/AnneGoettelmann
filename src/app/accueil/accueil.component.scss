@@ -1,0 +1,113 @@
+#container {
+  width: 100%;
+  height: 400%;
+}
+
+/// first_div
+
+.first_div {
+  float: left;
+  width: 100%;
+  height: 200px;
+  background: url('/assets/img/accueil_movie.gif') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.titre_first {
+  margin-top: 20px;
+  font-size: 50px;
+  color: #e6c5e6;
+  line-height: 5rem;
+  text-shadow: 2px 0px 4px grey;
+}
+
+.détails_first {
+  font-size: 30px;
+  color: white;
+}
+
+/// seconde_div
+
+.seconde_div {
+  float: left;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+.titre_seconde {
+  margin-top: 2rem;
+  font-weight: 750;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: #e6c5e6;
+}
+
+.details_seconde {
+  margin-top: 1.5rem;
+  font-weight: 750;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 0px;
+  --tw-text-opacity: 1;
+}
+
+/// third_div
+
+.third_div {
+  float: left;
+  width: 100%;
+  height: 465px;
+  background: linear-gradient(-45deg, #8e44ad, #9b59b6, #a87ac0, #b68ac8);
+  text-align: center;
+}
+
+.left_panel_third {
+  padding: 30px;
+  float: left;
+  width: 45%;
+}
+
+.right_panel_third {
+  float: left;
+  width: 50%;
+}
+
+.img_class {
+  padding: 30px;
+  height: 400px;
+  width: auto;
+}
+
+.h1_third_div {
+  color: white;
+}
+
+.h2_third_div {
+  margin-top: 5rem;
+  color: white;
+  font-weight: 250;
+  font-size: 1.5rem;
+  font-family: raleway, sans-serif;
+}
+
+.h3_third_div {
+  margin-top: 5rem;
+  color: white;
+  font-weight: 250;
+  font-size: 1.5rem;
+  font-family: raleway, sans-serif;
+}
+
+
+// forth_div
+
+.forth_div {
+  float: left;
+  width: 100%;
+  height: 600px;
+}

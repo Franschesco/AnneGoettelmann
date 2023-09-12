@@ -1,0 +1,39 @@
+<div [ngClass]="contact_container_class_to_return()">
+  <div class="contact_left_panel">
+    <h1 class="take_rdv" #contact></h1>
+    <div class="box">
+      <mat-icon class="icon_mail">phone</mat-icon>
+      <div class="text_content">
+        <h1 class="rdv_phone">Prenez rendez-vous par téléphone !</h1>
+        <h2 class="tel_number">+33 6 76 13 72 79</h2>
+      </div>
+    </div>
+    <h2 class="see_map_text">Voir la carte</h2>
+    <button (click)="see_map()" class="button_scroll_map">
+      <img src="assets/img/down_arrow.gif" alt="down_arrow" class="down_arrow">
+    </button>
+  </div>
+  <div [formGroup]="form" [ngClass]="mail_box_class_to_return()">
+    <div [ngClass]="the_mail_box_class_to_return()">
+      <form action="javascript:void(0);" (submit)="send()" class="form_class">
+        <h1 class="faire_le_premier_pas">Pour faire le premier pas, contactez-moi par mail !</h1>
+        <input type="text" formControlName="from_name" class="input_classic_class" placeholder="Ton Prénom" required>
+        <input type="text" formControlName="from_email" class="input_classic_class" placeholder="Ton adresse mail" required>
+        <input type="text" formControlName="subject" class="input_classic_class" placeholder="L'object de ton mail" required>
+        <input type="text" formControlName="message" class="input_message_class" placeholder="Ton Message" required>
+        <button type="submit">Envoyé</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div [ngClass]="map_container_class_return()">
+  <div [ngClass]="pictures_maps_container()">
+    <img src="assets/img/Cabinet.jpg" alt="Mon Salon" class="Salon_map">
+  </div>
+  <div [ngClass]="maps_class_return()">
+    <div class="size_map">
+      <app-maps-container id="google_map_div"></app-maps-container>
+    </div>
+  </div>
+</div>
+<app-bottom-bar></app-bottom-bar>

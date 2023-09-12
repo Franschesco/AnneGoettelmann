@@ -1,0 +1,103 @@
+#toolbar_container {
+  width: 100%;
+  height: 100px;
+  box-shadow: 0.063rem 0 0.25rem 0 purple;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.logo_div {
+  width: 25%;
+}
+
+.logo_big {
+  margin-left: 10%;
+  padding: 1rem;
+  height: 4rem;
+  width: auto;
+}
+
+.logo_little {
+  height: 3rem;
+  width: auto;
+}
+
+.buton_div {
+  z-index: 20;
+  width: 75%;
+  margin-left: 5%;
+  display: flex; /* Utilise Flexbox pour aligner les boutons en ligne */
+  justify-content: center; /* Centre les boutons horizontalement dans la div */
+  gap: 20px;
+}
+
+////////////////////////
+
+.button-56 {
+  margin-left: 1%;
+  align-items: center;
+  background-color: #f9edf7;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  transform: translate(4px, 4px);
+  transition: transform .2s ease-out;
+  z-index: -100;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56.clicked {
+  background-color: #e6c5e6;
+}
+
+.button-56.clicked:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56.active {
+  background-color: #e6c5e6;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}

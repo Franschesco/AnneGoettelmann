@@ -1,0 +1,311 @@
+.contact_container {
+  width: 100%;
+  height: 600px;
+}
+
+.contact_container_little {
+  width: 100%;
+  height: 1200px;
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.contact_left_panel {
+  float: left;
+  width: 40%;
+  height: 500px;
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.take_rdv {
+  margin-top: 120px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 3rem;
+}
+
+.box {
+  margin-top: 30px;
+  height: 80px;
+  width: 350px;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 0.063rem 0 0.25rem 0 grey;
+  display: flex;
+  align-items: center;
+}
+
+.icon_mail {
+  height: 40px;
+  width: 50px;
+  font-size: 40px;
+  color: purple;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.text_content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alignez le texte à gauche */
+}
+
+.rdv_phone {
+  margin-top: 30px;
+  line-height: 0rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.tel_number {
+  font-size: 15px;
+}
+
+.down_arrow {
+  height: 75px;
+  width: auto;
+}
+
+.see_map_text {
+  margin-top: 70px;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.contact_right_panel {
+  width: 60%;
+  height: 700px;
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  text-align: center;
+}
+
+.contact_right_panel_little {
+  width: 100%;
+  height: 700px;
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+  float: left;
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+}
+
+.mail_box {
+  margin-top: 30px;
+  height: 550px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0.063rem 0 0.25rem 0 grey;
+  background-color: white;
+  text-align: center;
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  text-align: center;
+}
+
+.mail_box_little {
+  margin-top: 30px;
+  height: 570px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0.063rem 0 0.25rem 0 grey;
+  background-color: white;
+  text-align: center;
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  text-align: center;
+}
+
+.faire_le_premier_pas {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.map_container_big {
+  height: 500px;
+  width: 100%;
+  display: flex;
+}
+
+.map_container_medium {
+  width: 100%;
+  height: auto;
+}
+.map_container_little {
+  height: 870px;
+  width: 100%;
+}
+
+.left_map_container_big {
+  height: 500px;
+  width: 35%;
+}
+
+.left_map_container_medium {
+  width: 100%;
+  height: auto;
+}
+
+.left_map_container_little {
+  height: 50%;
+  width: 95%;
+}
+
+.Salon_map {
+  padding: 20px;
+  width: 92.5%;
+  height: auto;
+}
+
+.right_map_container_big {
+  padding: 20px;
+  height: 500px;
+  width: 65%;
+}
+
+.right_map_container_little {
+  height: 500px;
+  width: 100%;
+}
+
+.size_map {
+  width: 100%;
+  height: 90%;
+}
+
+.button_scroll_map {
+  background: none; /* Supprime le fond */
+  border: none; /* Supprime le contour */
+  padding: 0;
+}
+
+
+.form_class {
+  width: 100%;
+  text-align: center;
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  text-align: center;
+}
+
+.input_classic_class {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Styles pour les boutons */
+.mail_box button[type="submit"] {
+  background-color: purple; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Supprime la bordure */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement intérieur */
+  font-size: 16px; /* Taille de police */
+  cursor: pointer; /* Curseur de souris */
+  transition: background-color 0.3s ease; /* Transition en douceur */
+  width: 80%;
+}
+
+.mail_box button[type="submit"]:hover {
+  background-color: purple; /* Couleur de fond au survol */
+}
+
+/* Styles pour les inputs */
+.mail_box input[type="text"] {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #ccc; /* Bordure légère */
+  border-radius: 10px; /* Coins arrondis */
+  margin-bottom: 15px; /* Marge en bas de chaque input */
+  font-size: 16px; /* Taille de police */
+  transition: border-color 0.3s ease; /* Transition en douceur pour la bordure */
+}
+
+.mail_box input[type="text"]:focus {
+  border-color: purple; /* Couleur de bordure au focus */
+  outline: none; /* Supprime la bordure de focus par défaut */
+}
+
+/* Autres styles */
+.mail_box h1.faire_le_premier_pas {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333; /* Couleur du texte */
+}
+
+/////////////////////////////
+
+/* Styles pour les boutons */
+.mail_box_little button[type="submit"] {
+  background-color: purple; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Supprime la bordure */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement intérieur */
+  font-size: 16px; /* Taille de police */
+  cursor: pointer; /* Curseur de souris */
+  transition: background-color 0.3s ease; /* Transition en douceur */
+  width: 80%;
+}
+
+.mail_box_little button[type="submit"]:hover {
+  background-color: purple; /* Couleur de fond au survol */
+}
+
+/* Styles pour les inputs */
+.mail_box_little input[type="text"] {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #ccc; /* Bordure légère */
+  border-radius: 10px; /* Coins arrondis */
+  margin-bottom: 15px; /* Marge en bas de chaque input */
+  font-size: 16px; /* Taille de police */
+  transition: border-color 0.3s ease; /* Transition en douceur pour la bordure */
+}
+
+.mail_box_little input[type="text"]:focus {
+  border-color: purple; /* Couleur de bordure au focus */
+  outline: none; /* Supprime la bordure de focus par défaut */
+}
+
+/* Autres styles */
+.mail_box_little h1.faire_le_premier_pas {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333; /* Couleur du texte */
+}
+
+
+/* Ajoutez d'autres styles personnalisés au besoin */
+
+.input_message_class {
+  height: 8rem;
+  padding: 1rem; /* Ajoutez un padding pour laisser de l'espace au texte */
+  border: 1px solid #ccc; /* Ajoutez une bordure pour délimiter l'input */
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.input_message_class::placeholder {
+  /* Supprimez la règle position:absolute */
+  /* Ajoutez un margin pour déplacer le placeholder vers le haut */
+  margin-top: -7rem; /* La valeur dépendra de la hauteur de l'input */
+  padding-left: 0rem; /* Ajustez le padding pour aligner le texte */
+}

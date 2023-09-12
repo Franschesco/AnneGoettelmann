@@ -1,0 +1,23 @@
+.bottom_bar {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(97,57,111);
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+  flex-direction: row; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.location_texte {
+  margin-top: 5px;
+  font-size: 15px;
+  color: white;
+}
+
+.location_icon {
+  height: 40px;
+  width: 40px;
+  color: white;
+  font-size: 30px;
+}

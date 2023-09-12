@@ -1,0 +1,117 @@
+.anagrame {
+  width: 100%;
+  height: 650px;
+  background-color: #e6c5e6;
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.box_anagrame {
+  width: 60%;
+  height: auto;
+  background-color: #ffe8ff;
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.anagrame_img {
+  width: 75%;
+  height: auto;
+  padding: 30px;
+}
+
+.text_anagrame {
+  color: grey;
+  line-height: 1.7rem;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.mon_parcours {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(193,113,222);
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+}
+
+.text_mon_parcours {
+  margin-left: 20%;
+  color: white;
+  font-weight: 300;
+  font-size: 33px;
+}
+
+/////////////////
+
+.div_parcours {
+  width: 100%;
+  height: auto;
+  background-color: #e6c5e6;
+  display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.box_parcours_1 {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+}
+
+.pink_texte {
+  margin-left: 2%;
+  width: 55%;
+  height: auto;
+  padding: 20px;
+  background-color: #ffe8ff;
+}
+
+.logo_parcours {
+  width: 200px;
+  height: auto;
+  rotate: -5deg;
+}
+
+.my_pictures {
+  rotate: 5deg;
+}
+
+.big_text_parcours {
+  color: grey;
+  font-size: 18px;
+}
+
+.right_pictures {
+  width: 45%;
+  height: auto;
+}
+
+.box_parcours_2 {
+  width: 70%;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.text_white {
+  color: black;
+  font-size: 18px;
+  font-weight: 350;
+  padding: 10px;
+}

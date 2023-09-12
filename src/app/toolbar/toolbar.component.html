@@ -1,0 +1,13 @@
+<mat-toolbar id="toolbar_container">
+  <div class="logo_div">
+    <img src="assets/img/Long_Logo.png" alt="Anne Goettelmann Logo" [ngClass]="f_logo_class()">
+  </div>
+  <div class="buton_div">
+    <button class="button-56" role="button" (click)="accueil_event()" [class.clicked]="AccueilClicked" *ngIf="!collapsed">Accueil</button>
+    <button class="button-56" role="button" (click)="mesoutils_event()" [class.clicked]="OutilsClicked" *ngIf="!collapsed">Mes outils</button>
+    <button class="button-56" role="button" (click)="seances_event()" [class.clicked]="SeancesClicked" *ngIf="!collapsed">Les séances</button>
+    <button class="button-56" role="button" (click)="apropos_event()" [class.clicked]="ProposClicked" *ngIf="!collapsed">A propos</button>
+    <button class="button-56" role="button" (click)="contact_event()" style="background-color: plum; margin-left: 5%" [class.clicked]="ContactClicked" *ngIf="!collapsed">Contact</button>
+    <button class="button-56" role="button" (click)="menu_is_click()" style="margin-left: 70%; background-color: plum;" *ngIf="collapsed">Menu</button>
+  </div>
+</mat-toolbar>
