@@ -1,6 +1,6 @@
 <div class="anagrame">
-  <div class="box_anagrame">
-    <img src="assets/img/Anagramme.gif" alt="anagrame" class="anagrame_img">
+  <div [ngClass]="get_box_anagram()">
+    <img src="assets/img/Anagramme.gif" alt="anagrame" [ngClass]="get_anagram_img()">
     <p class="text_anagrame">Je m'appelle Anne Goettelmann, Etonnant Mélange est l'anagramme parfait de mon nom et de mon prénom.
     J'ai découvert cette étonnante coïncidence à l'adolescence en même temps que le jeu des anagrammes. Cette
     étonnante coïncidence m'est revenue lorsque j'ai décidé de m'installer en tant que thérapeute, il y a huit ans, et que je
@@ -11,8 +11,8 @@
   <p class="text_mon_parcours">Mon Parcours</p>
 </div>
 <div class="div_parcours">
-  <div class="box_parcours_1">
-    <div class="pink_texte">
+  <div [ngClass]="return_box_parcours()">
+    <div [ngClass]="return_pink_texte()">
       <p class="big_text_parcours">Je n’aime pas particulièrement exposer ma vie, je suis plutôt quelqu’un de discret mais l’authenticité et la simplicité sont pour moi des valeurs importantes. La relation entre le thérapeute et son consultant est avant tout une relation entre deux êtres humains qui doit être basée sur la confiance et le partage.</p>
       <p class="big_text_parcours">Les expériences de vie que j’ai traversées et transcendées pour mieux avancer, me transformer, évoluer, me permettent de mieux accompagner les personnes qui traversent des difficultés proches ou similaires.</p>
       <p class="big_text_parcours">Je suis née dans un petit village en Alsace et j’ai grandi dans un milieu protégé où je n’ai manqué de rien. J’étais une enfant introvertie et timide dans un monde plutôt masculin dont je ne comprenais pas tous les codes. Mon adolescence a été très solitaire et je me réfugiais beaucoup dans les livres pour échapper à la réalité.</p>
@@ -21,7 +21,7 @@
       Seulement voilà, je me sentais prisonnière de cette vie bien établie et je ne savais plus où donner de la tête entre mon travail d’enseignante et une famille de quatre enfants.</p>
       <p class="big_text_parcours">C’est ce mal être, un état général assez indescriptible et inavouable puisqu’en apparence tout va bien, qui m’a poussé à entrer en thérapie. Je suis entrée en thérapie comme on entre en religion car la recherche de spiritualité a été mon moteur.</p>
     </div>
-    <div class="right_pictures">
+    <div [ngClass]="return_right_pictures()">
       <img src="assets/img/anne-goettelmann.jpg" alt="My_pictures" class="my_pictures">
       <img src="assets/img/logo-transparent-png.png" alt="My_logo" class="logo_parcours">
     </div>

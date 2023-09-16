@@ -10,13 +10,18 @@ import {ToolbarComponent} from "./toolbar/toolbar.component";
 export class AppComponent implements OnInit {
   title = 'Anne';
 
+  AccueilClicked = true;
+  OutilsClicked = false;
+  SeancesClicked = false;
+  ProposClicked = false;
+  ContactClicked = false;
   constructor(
     private router: Router,
   ) {}
 
   screenWidth = 0;
   collapsed = false;
-  menu_is_clicked = false;
+  menu_is_clicked = true;
 
   ngOnInit(): void {
     this.refresh_tool_bar();

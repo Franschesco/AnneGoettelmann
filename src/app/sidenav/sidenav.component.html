@@ -1,6 +1,6 @@
 <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
   <ul class="sidenav-nav">
-    <li class="sidenav-nav-item" *ngFor="let data of navData">
+    <li class="sidenav-nav-item" *ngFor="let data of navData" (click)="closeSidenav()">
       <a class="sidenav-nav-link" [routerLink]="[data.routeLink]"
          routerLinkActive="active">
         <mat-icon class="sidenav-link-icon">{{ data.icon }}</mat-icon>

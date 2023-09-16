@@ -1,2 +1,85 @@
-<p>seances works!</p>
+<div class="deroulement_bar_div">
+  <p class="text_deroulement_bar">Déroulement</p>
+</div>
+<div class="deroulement">
+  <div class="box_deroulement">
+    <div class="text">
+      <p class="text_header_deroulement">Vous arrivez dans mon cabinet, vous êtes souvent un peu stressé(e) de courir pour arriver à l'heure,
+        de caser les rendez-vous, ou tout simplement de venir et d'être dans l'inconnu...
+        Alors, je vous dirai de vous installer confortablement, je vous proposerai d'enlever votre veste, vos chaussures, de prendre un coussin, de boire quelque chose, de prendre le temps de faire tout cela
+        et de souffler, enfin !
+        Je vous demanderai alors comment vous allez... </p>
+    </div>
+    <div class="barre_violette">
+      <div class="barre_color">
+      </div>
+    </div>
+    <div [ngClass]="get_sec_layer()">
+      <div [ngClass]="get_text_sec_layer()">
+        <p [ngClass]="get_text_left()">Vous sentirez vite que vous êtes dans une bulle où
+          vous avez rendez-vous avec vous-même, où vous pouvez vraiment être qui vous êtes sans chichi, sans faire semblant</p>
+        <p [ngClass]="get_text_left()">Je vous laisserai exprimer ce qui vient et je vous proposerai l'outil d'expression qui sera le plus approprié à la situation.</p>
+      </div>
+      <div [ngClass]="get_img_right_sec_layer()">
+        <img class="img_cabinet_sec_layer" src="assets/img/Cabinet.jpg" alt="Le cabinet">
+      </div>
+    </div>
+    <div class="barre_violette">
+      <div class="barre_color">
+      </div>
+    </div>
+    <div class="third_layer">
+      <ul class="enumeration">
+        <li class="space">Durant <strong>la première séance</strong>  que l’on appelle <strong>l’anamnèse,</strong>  nous définirons ensemble des objectifs à atteindre. C’est un temps de parole nécessaire pour poser les choses</li>
+        <li class="space">Lors des <strong> séances suivantes,</strong>  nous tenterons d’attacher moins d’importance au mental en utilisant des outils tels que : l'art thérapie qui vous aidera à mieux vous connaitre, à mettre des mots sur vos ressentis lorsqu’ils sont difficiles à trouver, la gestalt qui vous permettra de prendre de la hauteur sur une situation relationnelle compliquée, l'hypnose qui pourra vous aider à résoudre un problème identifié très précis, les soins énergétiques qui vous réaligneront et vous ancreront dans le présent lorsque la fatigue émotionnelle ou corporelle vous assaille.</li>
+        <li class="space"><strong> Chaque séance est différente</strong>  et l'outil importe peu finalement, car chacun d’eux vous révèle à vous-même. Ce qui compte, c’est de reconnaitre en vous cet instinct de survie qui surgit du plus profond de votre âme et qui sait comme le Petit Prince que si vous voulez que les choses changent autour de vous, il faut commencer par les changer en vous.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="div_sep">
+</div>
+<div class="petit_prince">
+  <button class="button-74" role="button" (click)="before_index()"><</button>
+  <img src="assets/img/fond1.png" alt="img1" class="img_class" @fadeInOut *ngIf="index == 0">
+  <img src="assets/img/fond2.png" alt="img2" class="img_class" @fadeInOut *ngIf="index == 1">
+  <img src="assets/img/fond3.png" alt="img3" class="img_class" @fadeInOut *ngIf="index == 2">
+  <img src="assets/img/fond4.png" alt="img4" class="img_class" @fadeInOut *ngIf="index == 3">
+  <button class="button-74" role="button" (click)="after_index()">></button>
+</div>
+<div class="div_sep">
+</div>
+<div [ngClass]="get_pour_qui_pour_quoi_div()">
+  <div [ngClass]="get_pour_qui_div()">
+    <h1 class="titre_pour_qui_quoi">Pour qui ?</h1>
+    <ul class="enumeration">
+      <li [ngClass]="get_space_text()">Enfants, adolescents, adultes de tous âges...</li>
+      <li [ngClass]="get_space_text()">Vous êtes déprimé, stressé, angoissé, tendu, irritable…</li>
+      <li [ngClass]="get_space_text()">Vous ressentez un mal être, un manque de confiance en vous…</li>
+      <li [ngClass]="get_space_text()">Vous avez des difficultés dans votre travail, dans vos relations…</li>
+      <li [ngClass]="get_space_text()">Vous avez du mal à prendre des décisions, à aller de l’avant…</li>
+      <li [ngClass]="get_space_text()">Vous avez des « symptômes » (poids sur la poitrine, boule au ventre, mal de dos, phobies, insomnies)</li>
+      <li [ngClass]="get_space_text()">Vous observez que les situations anxiogènes et difficiles de votre vie se répètent sans cesse…</li>
+    </ul>
+  </div>
+  <div [ngClass]="get_pour_qui_div()">
+    <h1 class="titre_pour_qui_quoi">Pour quoi ?</h1>
+    <ul class="enumeration">
+      <li [ngClass]="get_space_text()">Pour que ce qui vous blesse et empêche d’avancer s’apaise</li>
+      <li [ngClass]="get_space_text()">Pour développer les attitudes qui vous ressemblent</li>
+      <li [ngClass]="get_space_text()">Pour libérer et laisser vivre les bonnes solutions qui sont déjà là en vous</li>
+      <li [ngClass]="get_space_text()">Pour vous développer vers plus de sérénité, de justesse et de confiance</li>
+      <li [ngClass]="get_space_text()">Pour vous rapprocher de votre être véritable</li>
+      <li [ngClass]="get_space_text()">Pour progresser vers une vie plus accomplie</li>
+      <li [ngClass]="get_space_text()">Pour retrouver votre joie de vivre, votre âme d’enfant</li>
+    </ul>
+  </div>
+</div>
+<div class="div_bouton_contact">
+  <div [ngClass]="get_box_button()">
+    <button [ngClass]="get_button_f()" role="button" (click)="naviguate_to_contact()">Vous avez des questions ? Cliquez-ici pour me contactez !</button>
+  </div>
+</div>
 <app-bottom-bar></app-bottom-bar>
+
+

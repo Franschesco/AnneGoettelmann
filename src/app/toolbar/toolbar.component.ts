@@ -30,7 +30,7 @@ export class ToolbarComponent {
 
   rootUrl: string = this.location.prepareExternalUrl('');
   ngOnInit(): void {
-    this.router.navigate(['/accueil'])
+    //this.router.navigate(['/accueil'])    // A réactiver a la fin
     this.refresh_tool_bar();
   }
 
@@ -54,7 +54,7 @@ export class ToolbarComponent {
   }
 
   menu_is_click () {
-    if (this.appcomponent.menu_is_clicked === false) {
+    if (this.appcomponent.menu_is_clicked == false) {
       this.appcomponent.menu_is_clicked = true;
       return ;
     } else {
@@ -62,6 +62,11 @@ export class ToolbarComponent {
     }
   }
   all_false() {
+    this.appcomponent.AccueilClicked = false;
+    this.appcomponent.OutilsClicked = false;
+    this.appcomponent.SeancesClicked = false;
+    this.appcomponent.ProposClicked = false;
+    this.appcomponent.ContactClicked = false;
     this.AccueilClicked = false;
     this.OutilsClicked = false;
     this.SeancesClicked = false;
@@ -70,36 +75,42 @@ export class ToolbarComponent {
   }
   accueil_event () {
     this.all_false();
-    this.AccueilClicked = true;
+    this.appcomponent.AccueilClicked = true;
+    this.AccueilClicked = this.appcomponent.AccueilClicked;
     this.scroll_to_top();
     this.router.navigate(['/accueil'])
   }
 
   mesoutils_event () {
     this.all_false();
-    this.OutilsClicked = true;
+    this.appcomponent.OutilsClicked = true;
+    this.OutilsClicked = this.appcomponent.OutilsClicked;
     this.scroll_to_top();
     this.router.navigate(['/mesoutils'])
   }
 
   seances_event () {
     this.all_false();
-    this.SeancesClicked = true;
+    this.appcomponent.SeancesClicked = true;
+    this.SeancesClicked = this.appcomponent.SeancesClicked;
     this.scroll_to_top();
     this.router.navigate(['/seances'])
   }
 
   apropos_event () {
     this.all_false();
-    this.ProposClicked = true;
+    this.appcomponent.ProposClicked = true;
+    this.ProposClicked = this.appcomponent.ProposClicked;
     this.scroll_to_top();
     this.router.navigate(['/apropos'])
   }
 
   contact_event () {
     this.all_false();
-    this.ContactClicked = true;
+    this.appcomponent.ContactClicked = true;
+    this.ContactClicked = this.appcomponent.ContactClicked;
     this.scroll_to_top();
+    console.log("oui oui !");
     this.router.navigate(['/contact'])
   }
 }

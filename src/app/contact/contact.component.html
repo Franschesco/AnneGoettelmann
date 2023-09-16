@@ -21,7 +21,8 @@
         <input type="text" formControlName="from_email" class="input_classic_class" placeholder="Ton adresse mail" required>
         <input type="text" formControlName="subject" class="input_classic_class" placeholder="L'object de ton mail" required>
         <input type="text" formControlName="message" class="input_message_class" placeholder="Ton Message" required>
-        <button type="submit">Envoyé</button>
+        <button type="submit" (click)="submit_button()" *ngIf="display_button">Envoyé</button>
+        <div *ngIf="!display_button" class="spinner"></div>
       </form>
     </div>
   </div>

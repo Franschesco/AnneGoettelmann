@@ -1,6 +1,7 @@
 import {Component, EventEmitter, HostListener, OnInit, Output, Renderer2} from '@angular/core';
 import {navbarData} from "./nav-data";
 import {animate, style, transition, trigger} from "@angular/animations";
+import {AppComponent} from "../app.component";
 
 interface SideNavToggle {
   screenWidth: number;
@@ -40,7 +41,10 @@ interface SideNavToggle {
 })
 export class SidenavComponent implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+  constructor(
+    private renderer: Renderer2,
+    public appcomponent: AppComponent,
+  ) {
   }
 
   @Output() onToggleSideNav: EventEmitter<SideNavToggle> = new EventEmitter();
@@ -67,8 +71,14 @@ export class SidenavComponent implements OnInit {
     this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
   }
 
+  scroll_to_top() {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant" // Pour un défilement instante,
+    });
+  }
   closeSidenav(): void {
-    this.collapsed = false
-    this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
+    this.scroll_to_top();
+    this.appcomponent.menu_is_clicked = true;
   }
 }

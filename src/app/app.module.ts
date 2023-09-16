@@ -22,6 +22,9 @@ import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { MapsContainerComponent } from './maps-container/maps-container.component';
 import {GoogleMap, GoogleMapsModule} from "@angular/google-maps";
+import {MatStepper, MatStepperModule} from "@angular/material/stepper";
+import { BoutonContactComponent } from './bouton-contact/bouton-contact.component';
+import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
 
 
 
@@ -39,6 +42,7 @@ import {GoogleMap, GoogleMapsModule} from "@angular/google-maps";
     BackgroundComponent,
     BottomBarComponent,
     MapsContainerComponent,
+    BoutonContactComponent,
   ],
     imports: [
         BrowserModule,
@@ -52,9 +56,13 @@ import {GoogleMap, GoogleMapsModule} from "@angular/google-maps";
       HttpClientModule,
       BrowserModule,
       ReactiveFormsModule,
-      GoogleMapsModule
+      GoogleMapsModule,
+      MatTabsModule,
+      MatStepperModule,
+      BrowserAnimationsModule,
+      MatSnackBarModule,
     ],
-  providers: [],
+  providers: [ToolbarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
 .anagrame {
   width: 100%;
-  height: 650px;
+  height: auto;
   background-color: #e6c5e6;
   display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
   flex-direction: column; /* Les éléments sont disposés verticalement */
@@ -12,6 +12,32 @@
 .box_anagrame {
   width: 60%;
   height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffe8ff;
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.box_anagrame_medium {
+  width: 80%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffe8ff;
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.box_anagrame_little {
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: #ffe8ff;
   flex-direction: column; /* Les éléments sont disposés verticalement */
   align-items: center; /* Alignez les éléments horizontalement au centre */
@@ -25,6 +51,12 @@
   padding: 30px;
 }
 
+.anagrame_img_little {
+  margin-top: 10px;
+  width: 90%;
+  height: auto;
+}
+
 .text_anagrame {
   color: grey;
   line-height: 1.7rem;
@@ -35,7 +67,7 @@
 .mon_parcours {
   width: 100%;
   height: 120px;
-  background-color: rgb(193,113,222);
+  background-color: rgb(97,57,111);
   display: flex; /* Ajoutez cette ligne pour activer le conteneur flex */
   flex-direction: column; /* Les éléments sont disposés verticalement */
   justify-content: center; /* Alignez les éléments verticalement au centre */
@@ -69,11 +101,28 @@
   display: flex;
 }
 
+.box_parcours_1_little {
+  width: 90%;
+  height: auto;
+  margin-top: 30px;
+  padding: 20px;
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
 .pink_texte {
   margin-left: 2%;
   width: 55%;
   height: auto;
   padding: 20px;
+  background-color: #ffe8ff;
+}
+
+.pink_texte_little {
+  width: 100%;
+  height: auto;
   background-color: #ffe8ff;
 }
 
@@ -94,6 +143,12 @@
 
 .right_pictures {
   width: 45%;
+  height: auto;
+}
+
+.right_pictures_little {
+  margin-top: 30px;
+  width: 100%;
   height: auto;
 }
 

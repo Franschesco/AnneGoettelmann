@@ -2,6 +2,7 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import emailjs, {send} from '@emailjs/browser';
 import {FormBuilder, FormGroup, Validators, FormControl} from "@angular/forms";
 import {AppComponent} from "../app.component";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +12,8 @@ import {AppComponent} from "../app.component";
 
 export class ContactComponent implements OnInit{
   @ViewChild('contact', { static: true }) detailsElement!: ElementRef;
+
+  display_button: boolean = true;
 
   private textToWrite = 'Prenons rendez-vous !';
   private currentIndex = 0;
@@ -29,6 +32,7 @@ export class ContactComponent implements OnInit{
     private el: ElementRef,
     private fb: FormBuilder,
     private appComponent: AppComponent,
+    private snackBar: MatSnackBar,
   ) {}
 
   ngOnInit() {
@@ -90,15 +94,19 @@ export class ContactComponent implements OnInit{
     emailjs.init('Q4_BlQaZYJATG7VKY');
     const emailPattern = /.+@.+\..+/;
     const fromEmail = this.form.value.from_email;
-    if (!emailPattern.test(fromEmail)) {
-      alert('L\'adresse e-mail n\'est pas valide !');
-      return; // Ne continuez pas l'envoi si l'adresse e-mail n'est pas valide
-    }
     if (!this.form.valid) {
-      alert('Un des champs est mal renseigné !');
+      this.snackBar.open("Un des champs est mal renseigné !", "X", {
+        duration: 2000,
+      });
       return; // Ne continuez pas l'envoi si le formulaire n'est pas valide
     }
-
+    if (!emailPattern.test(fromEmail)) {
+      this.snackBar.open("L'adresse e-mail n'est pas valide !", "X", {
+        duration: 2000,
+      });
+      return; // Ne continuez pas l'envoi si l'adresse e-mail n'est pas valide
+    }
+    this.display_button = false;
     let response = await emailjs.send("service_laff2nh","template_xxbpyfi",{
       from_name: this.form.value.from_name,
       to_name: this.form.value.to_name,
@@ -107,8 +115,15 @@ export class ContactComponent implements OnInit{
       message: this.form.value.message,
     });
 
-    alert('Le message a bien été envoyé !')
+    this.snackBar.open("Le message a bien été envoyé !", "X", {
+      duration: 2000,
+    });
     this.form.reset();
+    this.display_button = true;
+  }
+
+  submit_button() {
+    console.log("oui");
   }
 
   typeEffect() {
