@@ -1,0 +1,151 @@
+
+.div_sec_buton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
+  width: 25%;
+  flex-direction: row; /* Les éléments sont disposés verticalement */
+  display: flex;
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.div_third_buton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
+  width: 25%;
+  flex-direction: row; /* Les éléments sont disposés verticalement */
+  display: flex;
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.div_forth_buton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
+  width: 25%;
+  flex-direction: row; /* Les éléments sont disposés verticalement */
+  display: flex;
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.box_pratique_1 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border: 2px solid rgb(97,57,111);
+  width: 80%;
+  height: auto;
+  background-color: #e6c5e6;
+}
+
+.box_pratique_2 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border: 2px solid rgb(97,57,111);
+  width: 80%;
+  height: auto;
+  background-color: #e6c5e6;
+}
+
+.box_pratique_3 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border: 2px solid rgb(97,57,111);
+  width: 80%;
+  height: auto;
+  background-color: #e6c5e6;
+}
+
+.box_pratique_4 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border: 2px solid rgb(97,57,111);
+  width: 80%;
+  height: auto;
+  background-color: #e6c5e6;
+}
+
+.photo_box_choice {
+  width: 80%;
+  height: auto;
+}
+
+.photo_box_choice:hover {
+  transition: all .2s ease;
+  width: 80%;
+  transform: translate(2px, 2px);
+}
+
+.text_buton_choice {
+  color: white;
+  margin-top: 5%;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+
+.button-74 {
+  margin-top: 4%;
+  z-index: 2;
+  background-color: white;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  transform: translate(2px, 2px);
+}
+
+.button-74:active {
+  transform: translate(2px, 2px);
+  box-shadow: #422800 2px 2px 0 0;
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.big_div_all_category {
+  width: 100%;
+  height: auto;
+  background-color: #9b59b6;
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  display: flex;
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
+
+.big_box_white {
+  margin-top: 30px;
+  width: 70%;
+  height: auto;
+  background-color: white;
+  flex-direction: column; /* Les éléments sont disposés verticalement */
+  display: flex;
+  align-items: center; /* Alignez les éléments horizontalement au centre */
+  justify-content: center; /* Alignez les éléments verticalement au centre */
+  text-align: center;
+}
